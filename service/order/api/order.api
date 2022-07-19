@@ -60,6 +60,7 @@ type (
 
 @server(
 	jwt: Auth
+	middleware: Example // 路由中间件声明
 )
 service Order {
 	@handler Create

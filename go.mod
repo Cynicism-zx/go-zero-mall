@@ -1,6 +1,6 @@
 module mall
 
-go 1.18
+go 1.17
 
 require (
 	github.com/dtm-labs/driver-gozero v0.0.2
