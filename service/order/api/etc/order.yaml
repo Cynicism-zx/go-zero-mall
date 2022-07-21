@@ -6,7 +6,7 @@ Mysql:
   DataSource: root:xiaoluo.618@tcp(127.0.0.1:3306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
 CacheRedis:
-  - Host: redis:6379
+  - Host: 127.0.0.1:6379
     Type: node
     Pass:
 
@@ -17,11 +17,11 @@ Auth:
 OrderRpc:
   Etcd:
     Hosts:
-    - etcd:2379
+    - 127.0.0.1:2379
     Key: order.rpc
 
 ProductRpc:
   Etcd:
     Hosts:
-    - etcd:2379
+    - 127.0.0.1:2379
     Key: product.rpc

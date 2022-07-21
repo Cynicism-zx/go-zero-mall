@@ -23,7 +23,15 @@ create table if not exists dtm_barrier.barrier(
 );
 ```
 
-## 感谢
+### 源码解读
+- 服务注册: [注册01](https://blog.csdn.net/pyf511765/article/details/122015861) [注册02](https://www.cnblogs.com/leescre/p/14799586.html)
+- 服务发现scheme:
+  grpc 支持多种url schemes连接grpc服务 即 grpc.DialContext(timeCtx, target, options...),target可以是下边的scheme,需要先想grpc注册scheme 
+  - dns:ip:port
+  - unix://path
+  - ipv4:ip:port
+  - discov://ip:port/key // 自动获取etcd注册的服务地址并建立连接
+- 负载均衡算法: [负载均衡](https://learnku.com/articles/60059)
 
-- [go-zero](https://github.com/zeromicro/go-zero)
-- [DTM](https://github.com/dtm-labs/dtm)
+### 集成gorm
+- [go-zero集成gorm](https://blog.csdn.net/wanglei19891210/article/details/123258417)

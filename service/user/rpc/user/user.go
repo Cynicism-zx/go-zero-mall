@@ -3,6 +3,8 @@
 
 package user
 
+// 其他rpc服务调用本服务的入口
+
 import (
 	"context"
 
